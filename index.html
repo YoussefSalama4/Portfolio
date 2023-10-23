@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Personal Portfolio Website Design | Codehal</title>
+    <title>Responsive Personal Portfolio Website Design</title>
 
     <!-- box icons -->
     <link
@@ -17,6 +17,8 @@
   </head>
 
   <body>
+
+    <div class="scroller"></div>
     <!-- header design -->
     <header class="header">
       <a href="#" class="logo">Portfolio</a>
@@ -29,12 +31,13 @@
         <a href="#contact">Contact</a>
       </nav>
     </header>
+
     <!-- home section design -->
     <section class="home" id="home">
       <div class="home-content">
         <h3>Hello it's Me</h3>
         <h1>Youssef Salama</h1>
-        <h3>and i'm a <span>Frontend Developer</span></h3>
+        <h3>and i'm a <span class="multiple-text"></span></h3>
         <p>You can find me at the following links</p>
         <div class="social-media">
           <a href="https://www.facebook.com/osaelrai2"><i class="bx bxl-facebook"></i></a>
@@ -48,6 +51,7 @@
         
       </div>
     </section>
+
     <!-- about section design -->
     <section class="about" id="about">
       <div class="about-img">
@@ -63,7 +67,9 @@
         <a href="#services" class="btn">Read more</a>
       </div>
     </section>
+
     <!-- services section design -->
+
     <section class="services" id="services">
       <h2 class="heading">My <span>Skills</span></h2>
       <div class="services-container">
@@ -80,7 +86,7 @@
         <div class="services-box">
           <i class='bx bx-highlight icon' ></i>
           <h3>Programming and problem solving</h3>
-          <p>familiar with data structures, algorithms, and different programming languages like</p>
+          <p>familarity with data structures, algorithms, and different programming languages like</p>
           <div class="web-langs">
             <i class='bx bxl-c-plus-plus' ></i>
             <i class='bx bxl-java' ></i>
@@ -89,6 +95,7 @@
         </div>
     </section>
     <!-- portfolio section design -->
+
     <section class="portfolio" id="portfolio">
       <h2 class="heading">
         Latest <span>Projects</span>
@@ -97,8 +104,8 @@
         <div class="portfolio-box">
           <img src="images/portfolio1.jpg" alt="">
           <div class="portfolio-layer">
-            <h4>Web design</h4>
-            <p>Dashboard design</p>
+            <h4>Dashboard landpage design</h4>
+            <p>HTML - CSS</p>
             <a href="https://github.com/YoussefSalama4/dashboard-design"><i class='bx bx-link'></i></a>
           </div>
         </div>
@@ -106,8 +113,8 @@
         <div class="portfolio-box">
           <img src="images/portfolio2.jpg" alt="">
           <div class="portfolio-layer">
-            <h4>Web design</h4>
-            <p>Azkar website</p>
+            <h4>Azkar Website</h4>
+            <p>HTML - CSS - JS</p>
             <a href="https://github.com/YoussefSalama4/Hesn-Elmuslim"><i class='bx bx-link'></i></a>
           </div>
         </div>
@@ -115,8 +122,8 @@
         <div class="portfolio-box">
           <img src="images/portfolio3.jpg" alt="">
           <div class="portfolio-layer">
-            <h4>Web design</h4>
-            <p>Template design</p>
+            <h4>Responsive Template Design</h4>
+            <p>HTML - CSS</p>
             <a href="https://github.com/YoussefSalama4/Html-and-css-template-design"><i class='bx bx-link'></i></a>
           </div>
         </div>
@@ -124,8 +131,8 @@
         <div class="portfolio-box">
           <img src="images/portfolio4.jpg" alt="">
           <div class="portfolio-layer">
-            <h4>full stack web</h4>
-            <p>Icpc usc website</p>
+            <h4>Icpc usc website</h4>
+            <p>HTML - CSS - PHP - MySql</p>
             <a href="https://github.com/YoussefSalama4/icpc-usc-website"><i class='bx bx-link'></i></a>
           </div>
         </div>
@@ -133,8 +140,8 @@
         <div class="portfolio-box">
           <img src="images/portfolio5.jpg" alt="">
           <div class="portfolio-layer">
-            <h4>Desktop application</h4>
-            <p>Password manager app</p>
+            <h4>Password manager app</h4>
+            <p>Java - MySql</p>
             <a href="https://github.com/YoussefSalama4/Password-Manager-App"><i class='bx bx-link'></i></a>
           </div>
         </div>
@@ -143,15 +150,49 @@
     </section>
     <!-- contact section design -->
 
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me!</span></h2>
+      
+      <div class="contact-box">
+        <h1 class="error"></h1>
+        <form action="#" class="contact-form">
+          <div class="input-box">
+            <input class="form-name" type="text" placeholder="Full Name" name="name" id="">
+            <input class="form-email" type="email" placeholder="Email Address" name="email" id="">
+          </div>
+          <div class="input-box">
+            <input class="form-number" type="number" placeholder="Mobile Number" name="number" id="">
+            <input class="form-subject" type="text" placeholder="Email Subject" name="subject" id="">
+          </div>
+          <textarea class="form-message" name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+          <input type="submit" value="Send Message" class="btn">
+        </form>
+      </div>
+      
+    </section>
+
     <!-- footer design -->
 
+      <footer class="footer">
+        <div class="footer-text">
+          <p> &copy made by Youssef Salama</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+      </footer>
+
     <!-- scroll reveal -->
+
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <!-- typed js -->
+
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
     <!-- custom js -->
+
     <script src="js/script.js"></script>
+
   </body>
 </html>
