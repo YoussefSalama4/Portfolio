@@ -504,6 +504,13 @@ h1.error {
   }
 }
 @media (max-width: 550px) {
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    height: 0px;
+  }
   .home-img,
   .about-img {
     width: 300px;
