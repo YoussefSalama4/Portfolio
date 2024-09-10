@@ -36,6 +36,7 @@ html {
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
+  overflow-x: hidden;
 }
 .scroller {
   position: fixed;
@@ -538,6 +539,6 @@ h1.error {
     height: 200px;
   }
   html {
-    font-size: 20%;
+    font-size: 30%;
   }
 }
