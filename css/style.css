@@ -503,9 +503,31 @@ h1.error {
     border-radius: 10px;
   }
 }
-
+@media (max-width: 550px) {
+  .home-img,
+  .about-img {
+    width: 300px;
+    height: 300px;
+    margin: 3rem;
+  }
+  .portfolio-container {
+    grid-template-columns: 80%;
+    justify-content: center;
+  }
+  section {
+    min-height: 0;
+  }
+}
 @media (max-width: 450px) {
   html {
     font-size: 40%;
+  }
+}
+
+@media (max-width: 330px) {
+  .home-img,
+  .about-img {
+    width: 200px;
+    height: 200px;
   }
 }
