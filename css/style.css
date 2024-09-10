@@ -9,7 +9,6 @@
   outline: none;
   scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
-  overflow-x: hidden;
 }
 :root {
   --bg-color: #1f242d;
@@ -532,7 +531,7 @@ h1.error {
   }
 }
 
-@media (max-width: 330px) {
+@media (max-width: 320px) {
   .home-img,
   .about-img {
     width: 200px;
