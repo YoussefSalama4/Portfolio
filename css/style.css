@@ -280,10 +280,10 @@ span {
   padding: 1rem;
 }
 .portfolio-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  display: flex;
   gap: 20px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .portfolio-container img {
@@ -296,7 +296,19 @@ span {
   box-shadow: 0 0 1 var(--bg-color);
   overflow: hidden;
   display: flex;
-  margin: auto;
+  width: 30%;
+}
+
+@media (max-width: 1300px) {
+  .portfolio-container .portfolio-box {
+    width: 45%;
+  }
+  .portfolio-layer h4 {
+    font-size: 2.5rem;
+  }
+  .portfolio-layer p {
+    font-size: 1.6rem;
+  }
 }
 .portfolio-box .portfolio-layer {
   position: absolute;
@@ -321,11 +333,11 @@ span {
   transform: scale(1.1);
 }
 .portfolio-layer h4 {
-  font-size: 3rem;
+  font-size: 2rem;
   color: var(--bg-color);
 }
 .portfolio-layer p {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   margin: 0.3rem 0 1rem;
 }
 .portfolio-layer a {
@@ -361,8 +373,12 @@ span {
 .contact-box {
   display: flex;
   align-items: center;
-  height: calc(100vh - 200px);
   position: relative;
+}
+@media (min-width: 400px) {
+  .contact-box {
+    height: calc(100vh - 200px);
+  }
 }
 h1.error {
   position: absolute;
@@ -503,6 +519,9 @@ h1.error {
     padding: 20px;
     border-radius: 10px;
   }
+  .portfolio-container .portfolio-box {
+    width: 70%;
+  }
 }
 @media (max-width: 550px) {
   ::-webkit-scrollbar {
@@ -529,6 +548,12 @@ h1.error {
 @media (max-width: 450px) {
   html {
     font-size: 40%;
+  }
+  .home-img,
+  .about-img {
+    width: 250px;
+    height: 250px;
+    margin: 5rem;
   }
 }
 
