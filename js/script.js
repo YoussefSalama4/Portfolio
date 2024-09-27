@@ -1,3 +1,196 @@
+/*==================== React Projects render ====================*/
+const reactProjects = [
+  {
+    image: "images/portfolio6.jpg",
+    title: "World wise",
+    tools:
+      "React.js - CSS Modules - React Router - Context API - Geolocation - Local Storage",
+    github: "https://github.com/YoussefSalama4/Worldwise",
+    demo: "https://worldwise-flax-three.vercel.app",
+  },
+  {
+    image: "images/portfolio5.jpg",
+    title: "The React Quiz",
+    tools: "React.js - CSS - Context API",
+    github: "https://github.com/YoussefSalama4/The-React-Quiz",
+  },
+  {
+    image: "images/portfolio1.jpg",
+    title: "Movies website",
+    tools: "React.js - CSS - OMDB API - Local storage",
+    github: "https://github.com/YoussefSalama4/movies-app-React.js",
+    demo: "https://movies-app-react-js-rosy.vercel.app",
+  },
+  {
+    image: "images/portfolio2.jpg",
+    title: "Travel packing list",
+    tools: "React.js - CSS - Local storage",
+    github: "https://github.com/YoussefSalama4/far-away-travel-list-react.js",
+    demo: "https://far-away-travel-list-react-js.vercel.app",
+  },
+  {
+    image: "images/portfolio3.jpg",
+    title: "Cart page",
+    tools: "React.js - CSS",
+    github:
+      "https://github.com/YoussefSalama4/front-end-mentor-cart-task-React.js",
+    demo: "https://front-end-mentor-cart-task-react-js.vercel.app",
+  },
+  {
+    image: "images/portfolio4.jpg",
+    title: "Eat-N-Split",
+    tools: "React.js - CSS",
+    github: "https://github.com/YoussefSalama4/Eat-N-Split",
+    demo: "https://eat-n-split-coral-one.vercel.app",
+  },
+  {
+    image: "images/portfolio5.jpg",
+    title: "Classy-Weather",
+    tools: "React.js - CSS",
+    github: "https://github.com/YoussefSalama4/Classy-Weather-React.js",
+    demo: "https://classy-weather-react-js.vercel.app",
+  },
+];
+const reactProjectsContainer = document.getElementById("react-container");
+
+reactProjects.forEach((project) => {
+  const reactProject = document.createElement("div");
+  reactProject.classList.add("portfolio-box");
+  reactProject.innerHTML = `
+  <img src=${project.image} alt="" />
+            <div class="portfolio-layer">
+              <h4>${project.title}</h4>
+              <p>${project.tools}</p>
+              <div class="links">
+                <a
+                  target="_blank"
+                  href=${project.github}
+                  ><i class="bx bxl-github"></i
+                ></a>
+                ${
+                  project.demo
+                    ? `<a
+                  target="_blank"
+                  href=${project.demo}
+                  ><i class="bx bx-link"></i
+                ></a>`
+                    : ""
+                }
+              </div>
+            </div>
+  `;
+  reactProjectsContainer.appendChild(reactProject);
+});
+
+/*==================== React Projects render ====================*/
+const javascriptProjects = [
+  {
+    image: "images/portfolio1.jpg",
+    title: "Product management system",
+    tools: "HTML - CSS - JS - LocalStorage",
+    github: "https://github.com/YoussefSalama4/Cruds-js-with-local-storage",
+    demo: "https://cruds-js-with-local-storage.vercel.app",
+  },
+  {
+    image: "images/portfolio2.jpg",
+    title: "Text Encryption/Decryption website",
+    tools: "HTML - CSS - JS",
+    github:
+      "https://github.com/YoussefSalama4/Encryption-Decryption-algorithms",
+    demo: "https://encryption-decryption-algorithms.vercel.app",
+  },
+  {
+    image: "images/portfolio3.jpg",
+    title: "Image editor",
+    tools: "HTML - CSS - JS",
+    github: "https://github.com/YoussefSalama4/Image-editor",
+    demo: "https://image-editor-seven-gules.vercel.app",
+  },
+  {
+    image: "images/portfolio4.jpg",
+    title: "Guess anime name game",
+    tools: "HTML - CSS - JS",
+    github: "https://github.com/YoussefSalama4/Anime-Guess-game",
+    demo: "https://anime-guess-game.vercel.app",
+  },
+];
+const javascriptProjectsContainer = document.getElementById(
+  "javascript-container"
+);
+
+javascriptProjects.forEach((project) => {
+  const javascriptProject = document.createElement("div");
+  javascriptProject.classList.add("portfolio-box");
+  javascriptProject.innerHTML = `
+  <img src=${project.image} alt="" />
+            <div class="portfolio-layer">
+              <h4>${project.title}</h4>
+              <p>${project.tools}</p>
+              <div class="links">
+                <a
+                  target="_blank"
+                  href=${project.github}
+                  ><i class="bx bxl-github"></i
+                ></a>
+                ${
+                  project.demo
+                    ? `<a
+                  target="_blank"
+                  href=${project.demo}
+                  ><i class="bx bx-link"></i
+                ></a>`
+                    : ""
+                }
+              </div>
+            </div>
+  `;
+  javascriptProjectsContainer.appendChild(javascriptProject);
+});
+/*==================== Nodejs Projects render ====================*/
+const nodejsProjects = [
+  {
+    image: "images/portfolio1.jpg",
+    title: "Final project APIS",
+    tools: "Express.js - MongoDB - Mongoose - MongoDB Atlas - Appwrite",
+    github: "https://github.com/YoussefSalama4/final-project-apis",
+  },
+  {
+    image: "images/portfolio2.jpg",
+    title: "Tourguide APIS",
+    tools: "Express.js - MongoDB - Mongoose - MongoDB Atlas",
+    github: "https://github.com/YoussefSalama4/natours-APIS",
+  },
+];
+const nodejsProjectsContainer = document.getElementById("nodejs-container");
+
+nodejsProjects.forEach((project) => {
+  const nodejsProject = document.createElement("div");
+  nodejsProject.classList.add("portfolio-box");
+  nodejsProject.innerHTML = `
+  <img src=${project.image} alt="" />
+            <div class="portfolio-layer">
+              <h4>${project.title}</h4>
+              <p>${project.tools}</p>
+              <div class="links">
+                <a
+                  target="_blank"
+                  href=${project.github}
+                  ><i class="bx bxl-github"></i
+                ></a>
+                ${
+                  project.demo
+                    ? `<a
+                  target="_blank"
+                  href=${project.demo}
+                  ><i class="bx bx-link"></i
+                ></a>`
+                    : ""
+                }
+              </div>
+            </div>
+  `;
+  nodejsProjectsContainer.appendChild(nodejsProject);
+});
 /*==================== toggle icon navbar ====================*/
 let menuIcon = document.querySelector("#menu-icon");
 let navbar = document.querySelector(".navbar");

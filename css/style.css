@@ -375,19 +375,15 @@ span {
   align-items: center;
   position: relative;
 }
-@media (min-width: 400px) {
-  .contact-box {
-    height: calc(100vh - 200px);
-  }
-}
 h1.error {
   position: absolute;
   top: 0%;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 18px;
+  font-size: 1.8rem;
   color: rgba(176, 80, 80, 1);
   text-align: center;
+  z-index: 100;
 }
 .contact form .input-box {
   display: flex;
@@ -395,6 +391,16 @@ h1.error {
   flex-wrap: wrap;
 }
 
+@media (min-width: 400px) {
+  .contact-box {
+    height: calc(100vh - 200px);
+  }
+}
+@media (max-width: 400px) {
+  h1.error {
+    top: -8%;
+  }
+}
 .contact form .input-box input,
 .contact form textarea {
   width: 100%;
@@ -457,6 +463,12 @@ h1.error {
 @media (max-width: 1200px) {
   html {
     font-size: 50%;
+  }
+  .home-img,
+  .about-img {
+    width: 350px;
+    height: 350px;
+    margin: 5rem;
   }
 }
 
