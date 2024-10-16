@@ -1,7 +1,16 @@
 /*==================== React Projects render ====================*/
 const reactProjects = [
   {
-    image: "images/portfolio6.jpg",
+    image: "images/pizza.PNG",
+    title: "Fast React Pizza Co.",
+    tools:
+      "React.js - Tailwind- React Router - React Router actions and loaders-  Redux toolkit - Geolocation",
+    github:
+      "https://github.com/YoussefSalama4/Fast-React-Pizza-Co",
+    demo: "https://fast-react-pizza-co-ten.vercel.app/",
+  },
+  {
+    image: "images/worldwise.PNG",
     title: "World wise",
     tools:
       "React.js - CSS Modules - React Router - Context API - Geolocation - Local Storage",
@@ -9,27 +18,30 @@ const reactProjects = [
     demo: "https://worldwise-flax-three.vercel.app",
   },
   {
-    image: "images/portfolio5.jpg",
+    image: "images/react.PNG",
     title: "The React Quiz",
     tools: "React.js - CSS - Context API",
-    github: "https://github.com/YoussefSalama4/The-React-Quiz",
+    github:
+      "https://github.com/YoussefSalama4/The-React-Quiz",
   },
   {
-    image: "images/portfolio1.jpg",
+    image: "images/movies.PNG",
     title: "Movies website",
     tools: "React.js - CSS - OMDB API - Local storage",
-    github: "https://github.com/YoussefSalama4/movies-app-React.js",
+    github:
+      "https://github.com/YoussefSalama4/movies-app-React.js",
     demo: "https://movies-app-react-js-rosy.vercel.app",
   },
   {
-    image: "images/portfolio2.jpg",
+    image: "images/travel.PNG",
     title: "Travel packing list",
     tools: "React.js - CSS - Local storage",
-    github: "https://github.com/YoussefSalama4/far-away-travel-list-react.js",
+    github:
+      "https://github.com/YoussefSalama4/far-away-travel-list-react.js",
     demo: "https://far-away-travel-list-react-js.vercel.app",
   },
   {
-    image: "images/portfolio3.jpg",
+    image: "images/cart.PNG",
     title: "Cart page",
     tools: "React.js - CSS",
     github:
@@ -37,21 +49,24 @@ const reactProjects = [
     demo: "https://front-end-mentor-cart-task-react-js.vercel.app",
   },
   {
-    image: "images/portfolio4.jpg",
+    image: "images/eat-n-split.PNG",
     title: "Eat-N-Split",
     tools: "React.js - CSS",
     github: "https://github.com/YoussefSalama4/Eat-N-Split",
     demo: "https://eat-n-split-coral-one.vercel.app",
   },
   {
-    image: "images/portfolio5.jpg",
+    image: "images/weather.PNG",
     title: "Classy-Weather",
     tools: "React.js - CSS",
-    github: "https://github.com/YoussefSalama4/Classy-Weather-React.js",
+    github:
+      "https://github.com/YoussefSalama4/Classy-Weather-React.js",
     demo: "https://classy-weather-react-js.vercel.app",
   },
 ];
-const reactProjectsContainer = document.getElementById("react-container");
+const reactProjectsContainer = document.getElementById(
+  "react-container"
+);
 
 reactProjects.forEach((project) => {
   const reactProject = document.createElement("div");
@@ -85,14 +100,15 @@ reactProjects.forEach((project) => {
 /*==================== React Projects render ====================*/
 const javascriptProjects = [
   {
-    image: "images/portfolio1.jpg",
+    image: "images/CRUDS.PNG",
     title: "Product management system",
     tools: "HTML - CSS - JS - LocalStorage",
-    github: "https://github.com/YoussefSalama4/Cruds-js-with-local-storage",
+    github:
+      "https://github.com/YoussefSalama4/Cruds-js-with-local-storage",
     demo: "https://cruds-js-with-local-storage.vercel.app",
   },
   {
-    image: "images/portfolio2.jpg",
+    image: "images/encryption.PNG",
     title: "Text Encryption/Decryption website",
     tools: "HTML - CSS - JS",
     github:
@@ -100,17 +116,19 @@ const javascriptProjects = [
     demo: "https://encryption-decryption-algorithms.vercel.app",
   },
   {
-    image: "images/portfolio3.jpg",
+    image: "images/image.PNG",
     title: "Image editor",
     tools: "HTML - CSS - JS",
-    github: "https://github.com/YoussefSalama4/Image-editor",
+    github:
+      "https://github.com/YoussefSalama4/Image-editor",
     demo: "https://image-editor-seven-gules.vercel.app",
   },
   {
-    image: "images/portfolio4.jpg",
+    image: "images/anime.PNG",
     title: "Guess anime name game",
     tools: "HTML - CSS - JS",
-    github: "https://github.com/YoussefSalama4/Anime-Guess-game",
+    github:
+      "https://github.com/YoussefSalama4/Anime-Guess-game",
     demo: "https://anime-guess-game.vercel.app",
   },
 ];
@@ -144,24 +162,33 @@ javascriptProjects.forEach((project) => {
               </div>
             </div>
   `;
-  javascriptProjectsContainer.appendChild(javascriptProject);
+  javascriptProjectsContainer.appendChild(
+    javascriptProject
+  );
 });
 /*==================== Nodejs Projects render ====================*/
 const nodejsProjects = [
   {
     image: "images/portfolio1.jpg",
     title: "Final project APIS",
-    tools: "Express.js - MongoDB - Mongoose - MongoDB Atlas - Appwrite",
-    github: "https://github.com/YoussefSalama4/final-project-apis",
+    tools:
+      "Express.js - MongoDB - Mongoose - MongoDB Atlas - Appwrite",
+    github:
+      "https://github.com/YoussefSalama4/final-project-apis",
+    demo: "https://www.linkedin.com/posts/alaa-younes-aa0728234_وآخر-دعواهم-أن-الحمد-لله-activity-7217298728221634560-Ujqz/?utm_source=share&utm_medium=member_desktop",
   },
   {
     image: "images/portfolio2.jpg",
     title: "Tourguide APIS",
-    tools: "Express.js - MongoDB - Mongoose - MongoDB Atlas",
-    github: "https://github.com/YoussefSalama4/natours-APIS",
+    tools:
+      "Express.js - MongoDB - Mongoose - MongoDB Atlas",
+    github:
+      "https://github.com/YoussefSalama4/natours-APIS",
   },
 ];
-const nodejsProjectsContainer = document.getElementById("nodejs-container");
+const nodejsProjectsContainer = document.getElementById(
+  "nodejs-container"
+);
 
 nodejsProjects.forEach((project) => {
   const nodejsProject = document.createElement("div");
@@ -191,6 +218,46 @@ nodejsProjects.forEach((project) => {
   `;
   nodejsProjectsContainer.appendChild(nodejsProject);
 });
+/*==================== Slider ====================*/
+const productContainer =
+  document.querySelectorAll(".slider");
+const leftBtn = document.querySelectorAll(".left-arrow");
+const rightBtn = document.querySelectorAll(".right-arrow");
+let projectWidth = document.querySelector(
+  ".portfolio-box"
+).offsetWidth;
+window.addEventListener("resize", () => {
+  projectWidth = document.querySelector(
+    ".portfolio-box"
+  ).offsetWidth;
+});
+
+const productContainers = Array.from(productContainer);
+productContainers.forEach((el, idx) => {
+  rightBtn[idx].addEventListener("click", () => {
+    console.log(projectWidth);
+    let containerDimensions = el.getBoundingClientRect();
+    let containerWidth = containerDimensions.width;
+    const scrollWidth =
+      containerWidth > projectWidth + 20
+        ? containerWidth -
+          (containerWidth % (projectWidth + 20))
+        : containerWidth;
+    el.scrollLeft += scrollWidth;
+  });
+
+  leftBtn[idx].addEventListener("click", () => {
+    let containerDimensions = el.getBoundingClientRect();
+    let containerWidth = containerDimensions.width;
+    const scrollWidth =
+      containerWidth > projectWidth + 20
+        ? containerWidth -
+          (containerWidth % (projectWidth + 20))
+        : containerWidth;
+    el.scrollLeft -= scrollWidth;
+  });
+});
+
 /*==================== toggle icon navbar ====================*/
 let menuIcon = document.querySelector("#menu-icon");
 let navbar = document.querySelector(".navbar");
@@ -240,19 +307,32 @@ ScrollReveal().reveal(".home-content, .heading", {
   origin: "top",
 });
 ScrollReveal().reveal(
-  ".home-img, .services-container, .portfolio-box, .contact form ",
+  ".home-img, .services-container, .contact form ",
   {
     origin: "bottom",
   }
 );
-ScrollReveal().reveal(".home-content h1, .about-img, .portfolio-header", {
-  origin: "left",
-});
-ScrollReveal().reveal(".home-content p, .about-content", { origin: "right" });
+ScrollReveal().reveal(
+  ".home-content h1, .about-img, .portfolio-header",
+  {
+    origin: "left",
+  }
+);
+ScrollReveal().reveal(
+  ".home-content p, .about-content, .slider",
+
+  {
+    origin: "right",
+  }
+);
 
 /*==================== typed js ====================*/
 const typed = new Typed(".multiple-text", {
-  strings: ["Frontend Developer", "problem solver", "backend developer"],
+  strings: [
+    "Frontend Developer",
+    "problem solver",
+    "backend developer",
+  ],
   typeSpeed: 100,
   backSpeed: 100,
   backDelay: 1000,
@@ -265,23 +345,53 @@ let formEmail = document.querySelector(".form-email");
 let formNumber = document.querySelector(".form-number");
 let formSubject = document.querySelector(".form-subject");
 let formMessage = document.querySelector(".form-message");
-let formError = document.querySelector("h1.error");
+let formErrorContainer =
+  document.querySelector("div.error");
+let formError = document.querySelector("div.error p");
+let formErrorButton = document.querySelector(
+  "div.error button"
+);
 
+formErrorButton.onclick = () => {
+  formErrorContainer.style.display = "none";
+};
+
+document.addEventListener("click", (e) => {
+  console.log(e.target);
+  if (
+    e.target !== formErrorContainer &&
+    e.target.tagName !== "P"
+  ) {
+    formErrorContainer.style.display = "none";
+  }
+});
 form.onsubmit = function (event) {
   event.preventDefault();
   if (formName.value.length < 3) {
-    formError.innerText = "name should be at least 3 characters";
+    formError.innerText =
+      "name should be at least 3 characters";
+
+    formErrorContainer.style.display = "flex";
   } else if (
-    !/^[a-z0-9A-Z]+@(outlook|gmail)+.(com|org)$/g.test(formEmail.value)
+    !/^[a-z0-9A-Z]+@(outlook|gmail)+.(com|org)$/g.test(
+      formEmail.value
+    )
   ) {
     formError.innerText =
       "Email should include only letters and numbers and be @gmail or outlook";
+    formErrorContainer.style.display = "flex";
   } else if (formNumber.value.length < 10) {
-    formError.innerText = "number should be at least 10 digits";
+    formError.innerText =
+      "number should be at least 10 digits";
+    formErrorContainer.style.display = "flex";
   } else if (formSubject.value.length < 3) {
-    formError.innerText = "subject should be at least 3 characters";
+    formError.innerText =
+      "subject should be at least 3 characters";
+    formErrorContainer.style.display = "flex";
   } else if (formMessage.value.length < 10) {
-    formError.innerText = "message should be at least 10 characters";
+    formError.innerText =
+      "message should be at least 10 characters";
+    formErrorContainer.style.display = "flex";
   } else {
     form.submit();
     formError.innerText = "";
@@ -292,7 +402,8 @@ form.onsubmit = function (event) {
 let el = document.querySelector(".scroller");
 
 let height =
-  document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  document.documentElement.scrollHeight -
+  document.documentElement.clientHeight;
 
 window.addEventListener("scroll", () => {
   let scrollTop = document.documentElement.scrollTop;

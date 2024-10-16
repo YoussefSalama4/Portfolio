@@ -94,7 +94,7 @@ body {
   color: var(--main-color);
 }
 section {
-  min-height: 100vh;
+  min-height: 100svh;
   padding: 10rem 9% 2rem;
 }
 .home {
@@ -279,11 +279,60 @@ span {
   border-bottom: 3px solid var(--main-color);
   padding: 1rem;
 }
+.slider {
+  position: relative;
+  overflow-x: auto;
+
+  display: flex;
+
+  padding-bottom: 10px;
+}
+.slider-controller {
+  position: relative;
+}
+.left-arrow,
+.right-arrow {
+  background-color: transparent;
+  font-size: 7rem;
+  position: absolute;
+  z-index: 10;
+  color: var(--text-color);
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background-color: var(--bg-color);
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.left-arrow:hover,
+.right-arrow:hover {
+  background-color: var(--second-bg-color);
+  color: var(--main-color);
+}
+.left-arrow {
+  left: 5px;
+}
+.right-arrow {
+  right: 5px;
+}
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+/* Handle */
+.slider::-webkit-scrollbar-thumb {
+  display: none;
+}
 .portfolio-container {
   display: flex;
   gap: 20px;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .portfolio-container img {
@@ -291,32 +340,25 @@ span {
   transition: 0.5s;
 }
 .portfolio-container .portfolio-box {
+  flex: 0 0 auto;
   position: relative;
   border-radius: 2rem;
   box-shadow: 0 0 1 var(--bg-color);
   overflow: hidden;
   display: flex;
-  width: 30%;
+  width: 500px;
 }
 
-@media (max-width: 1300px) {
-  .portfolio-container .portfolio-box {
-    width: 45%;
-  }
-  .portfolio-layer h4 {
-    font-size: 2.5rem;
-  }
-  .portfolio-layer p {
-    font-size: 1.6rem;
-  }
-}
 .portfolio-box .portfolio-layer {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.1),
+    var(--second-bg-color)
+  );
   display: flex;
   align-items: center;
   justify-content: center;
@@ -334,11 +376,22 @@ span {
 }
 .portfolio-layer h4 {
   font-size: 2rem;
-  color: var(--bg-color);
+  font-weight: bolder;
+  color: var(--text-color);
 }
 .portfolio-layer p {
   font-size: 1.2rem;
   margin: 0.3rem 0 1rem;
+  color: #e1d8d8;
+}
+
+@media (max-width: 1300px) {
+  .portfolio-layer h4 {
+    font-size: 2rem;
+  }
+  .portfolio-layer p {
+    font-size: 1.5rem;
+  }
 }
 .portfolio-layer a {
   display: inline-flex;
@@ -370,6 +423,9 @@ span {
   width: 800px;
   /* margin-bottom: 5rem; */
 }
+.contact {
+  position: relative;
+}
 .contact-box {
   display: flex;
   align-items: center;
@@ -393,7 +449,7 @@ h1.error {
 
 @media (min-width: 400px) {
   .contact-box {
-    height: calc(100vh - 200px);
+    height: calc(100svh - 200px);
   }
 }
 @media (max-width: 400px) {
@@ -531,9 +587,6 @@ h1.error {
     padding: 20px;
     border-radius: 10px;
   }
-  .portfolio-container .portfolio-box {
-    width: 70%;
-  }
 }
 @media (max-width: 550px) {
   ::-webkit-scrollbar {
@@ -549,12 +602,13 @@ h1.error {
     height: 300px;
     margin: 5rem;
   }
-  .portfolio-container {
-    grid-template-columns: 80%;
-    justify-content: center;
-  }
+
   section {
     min-height: 0;
+  }
+
+  .portfolio-container .portfolio-box {
+    width: 400px;
   }
 }
 @media (max-width: 450px) {
@@ -567,6 +621,14 @@ h1.error {
     height: 250px;
     margin: 5rem;
   }
+  .portfolio-container .portfolio-box {
+    width: 350px;
+  }
+}
+@media (max-width: 380px) {
+  .portfolio-container .portfolio-box {
+    width: 270px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -577,5 +639,62 @@ h1.error {
   }
   html {
     font-size: 30%;
+  }
+  .portfolio-container .portfolio-box {
+    width: 240px;
+  }
+}
+
+div.error {
+  width: 50rem;
+  height: 200px;
+  border-radius: 10px;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0455f;
+  background-image: linear-gradient(
+    147deg,
+    #e0455f 0%,
+    #44000b 74%
+  );
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px 10000px rgba(0, 0, 0, 0.5);
+  flex-direction: column;
+  gap: 20px;
+  padding: 2rem;
+  text-align: center;
+  display: none;
+  transition: 0.5s;
+  animation-name: goUp;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+}
+div.error button {
+  background-color: transparent;
+  border: 2px solid #e0455f;
+  width: 100px;
+  border-radius: 100px;
+  color: white;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+div.error button:hover {
+  letter-spacing: 2px;
+  transform: scale(1.1);
+  background-color: #e0455f;
+}
+
+@keyframes goUp {
+  0% {
+    top: 60%;
+  }
+  100% {
+    top: 50%;
   }
 }
